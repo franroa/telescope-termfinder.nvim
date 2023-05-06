@@ -56,7 +56,7 @@ end
 
 M.fran_rename_term = function(prompt_bufnr)
     local entry = action_state.get_selected_entry()
-    local new_name = "fran"
+    local new_name = "frantest"
 
     if new_name ~= "" then
       vim.api.nvim_buf_set_name(entry.bufnr, new_name)
