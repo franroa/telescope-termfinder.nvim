@@ -56,7 +56,7 @@ end
 
 M.fran_rename_term = function(id)
     local entry = action_state.get_selected_entry()
-    local new_name = "frantest
+    local new_name = "frantest"
     if new_name ~= "" then
       terminal.get(id).name = new_name
     end
