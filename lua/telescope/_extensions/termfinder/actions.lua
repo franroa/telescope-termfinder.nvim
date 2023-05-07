@@ -54,12 +54,11 @@ M.rename_term = function(prompt_bufnr)
     end
 end
 
-M.fran_rename_term = function(prompt_bufnr)
+M.fran_rename_term = function(id)
     local entry = action_state.get_selected_entry()
-    local new_name = "frantest"
-
+    local new_name = "frantest
     if new_name ~= "" then
-      terminal.get(entry.id).name = new_name
+      terminal.get(id).name = new_name
     end
 end
 
