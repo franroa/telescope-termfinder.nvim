@@ -55,10 +55,9 @@ M.rename_term = function(prompt_bufnr)
 end
 
 M.fran_rename_term = function(bufnr, id, new_name)
-    if new_name ~= "" then
         vim.api.nvim_buf_set_name(bufnr, new_name)
       terminal.get(id).name = new_name
-    end
+      printf("test")
 end
 
 M.delete_term = function(prompt_bufnr)
