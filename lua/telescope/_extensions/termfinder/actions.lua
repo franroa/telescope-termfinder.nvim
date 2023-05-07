@@ -54,11 +54,10 @@ M.rename_term = function(prompt_bufnr)
     end
 end
 
-M.fran_rename_term = function(bufnr, new_name)
-    local entry = action_state.get_selected_entry()
+M.fran_rename_term = function(bufnr, id, new_name)
     if new_name ~= "" then
-        vim.api.nvim_buf_set_name(entry.bufnr, new_name)
-      terminal.get(entry.id).name = new_name
+        vim.api.nvim_buf_set_name(bufnr, new_name)
+      terminal.get(id).name = new_name
     end
 end
 
